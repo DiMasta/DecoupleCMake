@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(DiNVVCCExec di_nvcc_exex.cpp)

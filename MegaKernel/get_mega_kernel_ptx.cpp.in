@@ -1,0 +1,8 @@
+/// CMake generated file, DO NOT EDIT !!!
+
+#include "get_mega_kernel_ptx.h"
+#include "@generatedFilepath@"
+
+const char* getMegaKernelPTX() {
+	return (const char*)ptxFileAsIntArray;
+}

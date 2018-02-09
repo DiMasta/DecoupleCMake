@@ -1,0 +1,26 @@
+SET (
+	EXTRA_LIBS
+	Texture
+	Checker
+	Dirt
+	Ramp
+)
+
+SET (
+	SOURCE_FILES
+	texture_manager.cpp
+)
+
+SET (
+	HEADER_FILES
+	texture_manager.h
+	texture_utils.h
+)
+
+INCLUDE_DIRECTORIES("${PROJECT_SOURCE_DIR}/Texture")
+INCLUDE_DIRECTORIES("${PROJECT_SOURCE_DIR}/Checker")
+INCLUDE_DIRECTORIES("${PROJECT_SOURCE_DIR}/Dirt")
+INCLUDE_DIRECTORIES("${PROJECT_SOURCE_DIR}/Ramp")
+
+ADD_LIBRARY(TextureManager ${SOURCE_FILES} ${HEADER_FILES})
+TARGET_LINK_LIBRARIES(TextureManager ${EXTRA_LIBS})

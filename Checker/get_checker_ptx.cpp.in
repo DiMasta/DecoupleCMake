@@ -1,0 +1,8 @@
+/// CMake generated file, DO NOT EDIT !!!
+
+#include "checker.h"
+#include "@checkerGeneratedFilePath@"
+
+const char* Checker::getPTX() {
+	return (const char*)ptxFileAsIntArray;
+}

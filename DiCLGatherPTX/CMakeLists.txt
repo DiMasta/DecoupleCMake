@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(DiCLGatherPTX di_clgatherptx.cpp)

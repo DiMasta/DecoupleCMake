@@ -1,0 +1,8 @@
+/// CMake generated file, DO NOT EDIT !!!
+
+#include "ramp.h"
+#include "@rampGeneratedFilePath@"
+
+const char* Ramp::getPTX() {
+	return (const char*)ptxFileAsIntArray;
+}

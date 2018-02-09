@@ -1,0 +1,5 @@
+/// CMake generated file, DO NOT EDIT !!!
+
+const char* getProcessInstructionCUFilePath() {
+	return "@processInstructionCUFilePath@";
+}

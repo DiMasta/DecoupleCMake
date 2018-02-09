@@ -1,0 +1,8 @@
+/// CMake generated file, DO NOT EDIT !!!
+
+#include "dirt.h"
+#include "@dirtGeneratedFilePath@"
+
+const char* Dirt::getPTX() {
+	return (const char*)ptxFileAsIntArray;
+}

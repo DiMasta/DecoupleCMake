@@ -1,0 +1,17 @@
+SET (
+	EXTRA_LIBS
+	nvrtc
+)
+
+SET (
+	SOURCE_FILES
+	nvrtc_program.cpp
+)
+
+SET (
+	HEADER_FILES
+	nvrtc_program.h
+)
+
+ADD_LIBRARY(DiNVRTCProgram ${SOURCE_FILES} ${HEADER_FILES})
+TARGET_LINK_LIBRARIES(DiNVRTCProgram ${EXTRA_LIBS})
