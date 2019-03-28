@@ -1,12 +1,11 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
 PROJECT(VRayGPUDecouple)
 
-SET(VRAY_SDK_DIR "K:" CACHE FILEPATH "VRay sdk directory")
-SET(PATH_TO_NVCC_EXE "${VRAY_SDK_DIR}/cuda/cuda7/bin/nvcc.exe")
+SET(PATH_TO_NVCC_EXE "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/bin/nvcc.exe")
 
-# Use nvcc from the VRay SDK
-INCLUDE_DIRECTORIES("${VRAY_SDK_DIR}/cuda/cuda7/include")
-LINK_DIRECTORIES("${VRAY_SDK_DIR}/cuda/cuda7/lib/x64")
+# Use nvcc from the local installation
+INCLUDE_DIRECTORIES("C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/include")
+LINK_DIRECTORIES("C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/lib/x64")
 
 ADD_SUBDIRECTORY(DiCLGatherPTX)
 ADD_SUBDIRECTORY(DiNVCCExec)
